@@ -1,0 +1,103 @@
+:root {
+	/** Website Colors **/
+	--primary-text-color: #ff5d8f;
+	--secondary-text-color: #ea1c2c;
+	--tertiary-text-color: #3b3b3b;
+	--bg-body: #f5d9d5;
+
+	/** Website Font **/
+	--main-font: "Nunito", sans-serif;
+}
+
+/** Global CSS Styles **/
+body {
+	background-color: var(--bg-body);
+	font-family: var(--main-font);
+}
+
+/** General Website Styles **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+/** Utility First **/
+.object-position-center {
+	object-position: center;
+}
+
+.text-red {
+	color: var(--secondary-text-color);
+}
+
+.text-pink {
+	color: var(--primary-text-color);
+}
+
+.paragraph {
+	font-size: clamp(1rem, 0.902rem + 0.562dvw, 1.25rem);
+}
+
+/** Header Section **/
+.navigation {
+	font-size: 1.5rem;
+}
+
+.navigation.scrolled {
+	background-color: rgb(222, 192, 222);
+	transition: background-color 0.5s ease-in;
+}
+
+.navigation__brand,
+.navigation__link {
+	transition: color 0.3s ease-in-out;
+}
+
+.navigation__brand {
+	--bs-navbar-brand-font-size: 1.5rem;
+}
+
+.navigation__svg {
+	transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); /* Soft rebound effect */
+	transform-origin: center;
+}
+
+.navigation__brand:hover .navigation__svg {
+	transform: rotate(180deg);
+}
+
+.navigation__link {
+	color: var(--tertiary-text-color);
+}
+
+.navigation__link:hover {
+	color: var(--secondary-text-color);
+}
+
+/** Hero Section **/
+.hero__name {
+	font-size: clamp(2.188rem, -6.191rem + 13.514dvw, 3.438rem);
+}
+
+/** About Section **/
+.about {
+	scroll-margin-block-start: 2.5rem;
+}

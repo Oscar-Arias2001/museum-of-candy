@@ -6,7 +6,10 @@ Small fictional website about a candy museum, which is a project to learn about 
 
 ## 📸 Preview
 
-
+![View-1](./assets/candy-1.png)
+![View-2](./assets/candy-2.png)
+![View-3](./assets/candy-3.png)
+![View-4](./assets/candy-4.png)
 
 ---
 
